@@ -1,7 +1,7 @@
 .calendar {
   display: flex;
   flex-wrap: wrap;
-  gap: $gap-between-days;
+  gap: $gap;
   width: $days-to-fit;
 
   font-family: Arial, sans-serif;
@@ -12,7 +12,7 @@
   @each $day, $tiles-to-add-on-left in $days {
     &--start-day--#{$day} {
       & :first-child {
-        margin-left: $tiles-to-add-on-left * ($gap-between-days + $column-side);
+        margin-left: $tiles-to-add-on-left * ($gap + $column-side);
       }
     }
   }
@@ -46,7 +46,7 @@
       cursor: pointer;
       background-color: $hovered-day-color;
       transform: translateY(-20px);
-      transition-property: transform;
+      transition-property: transform, background-color;
       transition-duration: 500ms;
     }
   }
