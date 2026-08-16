@@ -3,7 +3,6 @@
   flex-wrap: wrap;
   gap: $gap;
   width: $days-to-fit;
-
   font-family: Arial, sans-serif;
   font-size: 30px;
 
@@ -28,6 +27,7 @@
     height: $column-side;
     width: $column-side;
     background-color: $day-color;
+    transition-duration: 500ms;
 
     box-sizing: border-box;
     border: 1px solid black;
